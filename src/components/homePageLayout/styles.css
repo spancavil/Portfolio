@@ -1,0 +1,23 @@
+.borderImageRight {
+  border-image: linear-gradient(to right, #423f3e, black) 1;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+}
+
+.borderImageLeft {
+  border-image: linear-gradient(to left, #423f3e, black) 5;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+}
+
+.borderImageTop {
+  border-image: linear-gradient(to top, #423f3e, black) 5;
+  border-width: 0 1px 0 1px;
+  border-style: solid;
+}
+
+.borderImageBottom {
+  border-image: linear-gradient(to bottom, #423f3e, black) 5;
+  border-width: 0 1px 0 1px;
+  border-style: solid;
+}

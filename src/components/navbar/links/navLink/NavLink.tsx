@@ -12,12 +12,12 @@ type Props = {
 const NavLink = ({ item }: Props) => {
   const pathName = usePathname()
   const active = pathName === item.path
-  const styleActive = 'bg-white text-dark-blue'
+  const styleActive = 'bg-gray text-white hover:bg-light-gray'
   return (
     <Link
       href={item.path}
       key={item.title}
-      className={`w-24 p-3 rounded-3xl font-bold text-center ${active && styleActive}`}
+      className={`w-24 p-2 rounded-xl font-jakarta font-bold text-center border-2 border-light-gray hover:bg-dark-gray   ${active && styleActive}`}
     >
       {item.title}
     </Link>

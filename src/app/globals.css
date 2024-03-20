@@ -2,32 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  ::-webkit-scrollbar {
+    width: 10px;
   }
+
+  ::-webkit-scrollbar-track {
+    /* border-radius: 100vh; */
+    background: #171010;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2b2b2b;
+    /* border-radius: 100vh; */
+    /* border: 3px solid #f6f7ed; */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #423f3e;
+  }
+}
+
+@font-face {
+  font-family: 'Buda';
+  src: url('../../public/fonts/Buda/Buda-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('../../public/fonts/Oswald/Oswald-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url('../../public/fonts/Philosopher/Philosopher-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: url('../../public/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../../public/fonts/Ubuntu/Ubuntu-Regular.ttf');
 }
