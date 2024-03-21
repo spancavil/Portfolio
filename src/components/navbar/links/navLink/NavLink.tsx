@@ -17,7 +17,7 @@ const NavLink = ({ item }: Props) => {
     <Link
       href={item.path}
       key={item.title}
-      className={`w-24 p-2 rounded-xl font-jakarta font-bold text-center border-2 border-light-gray hover:bg-dark-gray   ${active && styleActive}`}
+      className={`transition ease-in-out duration-500 w-24 p-[4px] rounded-lg font-jakarta font-bold text-center border-[1px] border-light-gray hover:bg-dark-gray   ${active && styleActive}`}
     >
       {item.title}
     </Link>

@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-black text-white w-full p-5 md:p-10 lg:p-20 flex items-center flex-col justify-between mt-[100px]">
+      <body className="bg-black text-white w-full p-5 md:p-10 lg:p-20 flex items-center flex-col justify-between mt-[80px]">
         <NavBar />
         {children}
       </body>

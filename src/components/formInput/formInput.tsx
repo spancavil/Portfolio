@@ -7,7 +7,7 @@ type InputProps = {
   type?: React.HTMLInputTypeAttribute
   textArea?: boolean
 }
-const Input = ({
+const FormInput = ({
   label,
   title,
   register,
@@ -46,4 +46,4 @@ const Input = ({
   )
 }
 
-export default Input
+export default FormInput

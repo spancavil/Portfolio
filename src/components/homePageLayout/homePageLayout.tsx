@@ -7,7 +7,7 @@ const HomePageLayout = ({
   children: React.ReactNode
 }>) => {
   return (
-    <div className="w-full p-8 bg-black border-dashed border-[1px] border-light-gray border-opacity-80 relative">
+    <div className="w-full px-5 py-2 md:px-40 md:py-10 bg-black border-dashed border-[1px] border-light-gray border-opacity-80 relative">
       {/* RIGHT */}
       <div className="absolute borderImageRight right-[-20px] md:right-[-40px] lg:right-[-80px] top-[-1px] w-5 md:w-10 lg:w-20 h-[calc(100%+2px)]"></div>
       {/* black dashed */}
