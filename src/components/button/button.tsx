@@ -1,16 +1,20 @@
 import React from 'react'
 
 type ButtonProps = {
-  width?: number //Pixels
+  width?: number //pixel
+  height?: number | string//pixel
+  additionalStyles?: object
   children?: React.ReactNode
   onClick?: () => void
 }
 
-const Button = ({ width, children, onClick = () => {} }: ButtonProps) => {
+const Button = ({ width, height, children, additionalStyles, onClick = () => {} }: ButtonProps) => {
+
   return (
     <button
       onClick={onClick}
-      className={`transition ease-in-out duration-500 w-[${width ? width : '96'}px] p-[4px] rounded-lg font-jakarta font-bold text-center border-[1px] border-light-gray hover:bg-dark-gray`}
+      style={{width: width, height: height, ...additionalStyles}}
+      className={`transition ease-in-out duration-500 ${!width && 'w-[94px]'} rounded-lg font-jakarta font-bold text-center border-[1px] border-light-gray hover:bg-dark-gray`}
     >
       {children}
     </button>

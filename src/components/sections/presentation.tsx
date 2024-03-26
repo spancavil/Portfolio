@@ -11,7 +11,6 @@ const Presentation = () => {
   const [copied, setCopied] = useState(false)
 
   const onCopyClipboard = (result: any) => {
-    console.log(result);
     setCopied(true)
     setTimeout(() => {
       setCopied(false)
@@ -35,11 +34,11 @@ const Presentation = () => {
         <div className="w-full relative flex items-center gap-2">
           <Input value={email} disabled={true} />
           <CopyToClipboard onCopy={(text, result)=>onCopyClipboard(result)} text={email}>
-            <Button width={30}>
+            <Button height={40} width={40} additionalStyles={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
               {!copied ? (
-                <Image src={'/copy.svg'} height={40} width={40} alt="copy" />
+                <Image src={'/copy.svg'} height={25} width={25} alt="copy" />
               ) : (
-                <Image src={'/tick.svg'} height={40} width={40} alt="tick" />
+                <Image src={'/tick.svg'} height={25} width={25} alt="tick" />
               )}
             </Button>
           </CopyToClipboard>

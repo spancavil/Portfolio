@@ -4,11 +4,13 @@ import { Suspense } from 'react'
 import Loading from './loading'
 import HomePageLayout from '@/components/homePageLayout/homePageLayout'
 import Presentation from '@/components/sections/presentation'
+import MainProjects from '@/components/sections/mainProjects'
 
 export default function Home() {
   return (
     <HomePageLayout>
       <Presentation/>
+      <MainProjects/>
       <h2 className="text-2xl text-white p-5 md:p-20 font-buda font-bold">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum hic
         reprehenderit reiciendis quidem consequuntur voluptatem sit vitae esse
