@@ -1,4 +1,4 @@
-import { Techs } from './techs.enum'
+import { Techs } from '../enums/techs.enum'
 
 export interface Project {
   id: number
@@ -9,5 +9,7 @@ export interface Project {
   techs: Set<Techs>
   isMainProject: boolean
   cover: string
+  githubLink?: string,
+  deployLink?: string,
   images?: string[] | null
 }

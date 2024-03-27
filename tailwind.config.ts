@@ -11,9 +11,10 @@ const config: Config = {
       colors: {
         ['black']: '#000',
         ['dark-brown']: '#362222',
-        ['dark-gray']: '#171010',
+        ['dark-gray']: '#111111',
         ['gray']: '#2B2B2B',
         ['light-gray']: '#423F3E',
+        ['dark-white']: '#EEEEEE'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

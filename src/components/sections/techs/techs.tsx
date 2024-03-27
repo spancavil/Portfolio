@@ -1,4 +1,4 @@
-import { Project } from '@/interfaces/IProject'
+import { Project } from '@/domain/interfaces/IProject'
 import Image from 'next/image'
 import React, { useState } from 'react'
 
