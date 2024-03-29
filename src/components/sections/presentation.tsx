@@ -18,7 +18,7 @@ const Presentation = () => {
   }
 
   return (
-    <section className='flex flex-col gap-2 w-full'>
+    <section className='flex flex-col gap-2 w-full' id='about'>
       <div className="flex flex-col justify-center items-center md:flex-row gap-2 w-full">
         <div className="md:w-3/12">
           <div className="h-[150px] w-[150px] md:h-[200px] md:w-[200px] rounded-full relative overflow-hidden border-4 border-gray border-opacity-60">

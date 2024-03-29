@@ -10,9 +10,9 @@ const Links = (props: Props) => {
   const [openNavMobile, setOpenNavMobile] = useState(false)
   // const isAdmin = true
   const links = [
-    { title: 'Home', path: '/about' },
-    { title: 'Skills', path: '/skills' },
-    { title: 'Contact', path: '/contact' },
+    { title: 'About', path: '/about' },
+    { title: 'Projects', path: '/skills' },
+    { title: 'Skills', path: '/contact' },
   ]
 
   return (

@@ -90,7 +90,6 @@ const ProjectDetail = ({ params, searchParams }: Props) => {
         </div>
       </div>
     </div>
-    // </HomePageLayout
   )
 }
 
