@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <div className="flex flex-col justify-center items-center md:items-start gap-5 md:gap-10">
       <h2 className="md:p-5 font-jakarta font-semibold text-xl md:text-3xl underline">
-        Skills
+        Main skills
       </h2>
       <div
         id="skills"

@@ -12,6 +12,7 @@ const Links = (props: Props) => {
   const links = [
     { title: 'About', path: '/about' },
     { title: 'Projects', path: '/skills' },
+    { title: "Experience", path: 'experience'},
     { title: 'Skills', path: '/contact' },
   ]
 
