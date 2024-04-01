@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div className="w-full flex flex-col text-center md:text-left md:-mt-12">
       <div className="w-full">
-        <h3 className="text-xl font-jakarta text-white text-center md:text-left">
+        <h3 className="text-xl font-jakarta text-white text-center md:text-left pb-5">
           <Link href={'/'} className="text-blue-500">
             Home
           </Link>{' '}

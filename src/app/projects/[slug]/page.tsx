@@ -77,12 +77,12 @@ const ProjectDetail = ({ params, searchParams }: Props) => {
         <div
           className={`w-4/5 ${project?.images ? 'lg:w-[30%]' : 'lg:w-3/5'} flex flex-col justify-center gap-3 pt-4 md:pt-7`}
         >
-          <h1 className="font-ubuntu text-3xl pb-5 text-center md:text-left">
+          <h1 className="font-ubuntu font-bold text-xl md:text-3xl pb-5 text-center md:text-left">
             {project?.title}
           </h1>
           {paragraphsExtendedDescription.map((paragraph, index) => {
             return (
-              <p key={index} className="font-philosopher text-xl">
+              <p key={index} className="font-philosopher text-base md:text-xl">
                 {paragraph}
               </p>
             )

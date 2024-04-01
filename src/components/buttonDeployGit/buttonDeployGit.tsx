@@ -15,8 +15,8 @@ const ButtonDeployGit = ({ githubLink, deployLink }: ButtonDeployGitProps) => {
           <Button width={150} height={60}>
 
             <div className="w-full h-full flex items-center justify-center gap-3">
-              <span className="font-ubuntu text-xl">Deploy</span>
-              <div className="h-[40px] w-[40px] relative">
+              <span className="font-ubuntu text-lg md:text-xl">Deploy</span>
+              <div className="h-[20px] w-[20px] md:h-[30px] md:w-[30px] relative">
                 <Image src={'/deploy.svg'} fill alt="deploy" sizes="100%" />
               </div>
             </div>
@@ -27,8 +27,8 @@ const ButtonDeployGit = ({ githubLink, deployLink }: ButtonDeployGitProps) => {
         <a target="_blank" href={githubLink} rel="noopener noreferrer">
           <Button width={150} height={60}>
             <div className="w-full h-full flex items-center justify-center gap-3">
-              <span className="font-ubuntu text-xl">Github</span>
-              <div className="h-[40px] w-[40px] relative">
+              <span className="font-ubuntu text-lg md:text-xl">Github</span>
+              <div className="h-[20px] w-[20px] md:h-[30px] md:w-[30px] relative">
                 <Image src={'/github.svg'} fill alt="deploy" sizes="100%" />
               </div>
             </div>
