@@ -22,11 +22,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
   return (
     <div
-      className="transition ease-out duration-300 hover:-translate-y-2 hover:border-dark-white hover:bg-black flex flex-col g-3 w-full h-[550px] md:h-[500px] md:w-[400px] bg-dark-gray rounded-lg border-[1px] border-light-gray cursor-pointer"
+      className="transition ease-out duration-300 hover:-translate-y-2 hover:border-dark-white hover:bg-black flex flex-col g-3 w-full md:h-[500px] md:w-[400px] bg-dark-gray rounded-lg border-[1px] border-light-gray cursor-pointer"
       onClick={handleNavigate}
     >
       <div
-        className={`w-full ${isLogo ? 'h-1/5' : 'h-2/5'} bg-black flex justify-center items-center rounded-lg`}
+        className={`w-full ${isLogo ? 'h-20' : 'h-48'} bg-black flex justify-center items-center rounded-lg`}
       >
         <div
           className={`${isLogo ? 'w-4/5 h-5/6' : 'w-full h-full'} relative overflow-hidden`}
@@ -41,14 +41,14 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         </div>
       </div>
       <div
-        className={`w-full ${isLogo ? 'h-4/5' : 'h-3/5'} p-5 flex flex-col justify-start items-start gap-3`}
+        className={`w-full ${isLogo ? 'h-4/5' : 'h-3/5'} p-5 flex flex-col justify-start items-center md:items-start gap-3 text-center md:text-start`}
       >
         <Techs techs={project.techs} />
-        <h2 className="text-3xl font-jakarta font-bold">{project.title}</h2>
-        <h4 className="text-xl font-buda font-semibold">
+        <h2 className="text-xl md:text-3xl font-jakarta font-bold">{project.title}</h2>
+        <h4 className="text-base md:text-xl font-buda font-normal">
           {project.description}
         </h4>
-        <h4 className="text-xl font-buda font-semibold">
+        <h4 className="text-base md:text-xl font-buda font-semibold pt-4 md:pt-8">
           Role: {project.role}
         </h4>
       </div>

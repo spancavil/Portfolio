@@ -89,6 +89,27 @@ const projects: Project[] = [
     githubLink: 'https://github.com/spancavil/skydropX',
     deployLink: 'https://skydrop-x.vercel.app/'
   },
+  {
+    id: 5,
+    title: 'Tasks timer',
+    cover: '/projects/tasks-timer/tasks-timer1.png',
+    description: 'A task timer that would also work as an interval trainer',
+    extendedDescription: `A task timer that would also work as an interval trainer.`,
+    isMainProject: false,
+    role: 'Frontend developer',
+    techs: new Set([
+      Techs.JAVASCRIPT,
+      Techs.GIT,
+    ]),
+    githubLink: 'https://github.com/spancavil/CoderHouse-ProyectoFinal',
+    deployLink: 'https://spancavil.github.io/CoderHouse-ProyectoFinal',
+    images: [
+      '/projects/tasks-timer/tasks-timer1.png',
+      '/projects/tasks-timer/tasks-timer2.png',
+      '/projects/tasks-timer/tasks-timer3.png',
+      '/projects/tasks-timer/tasks-timer4.png',
+    ]
+  }
 ]
 
 export default projects

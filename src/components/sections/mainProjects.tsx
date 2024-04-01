@@ -1,6 +1,9 @@
 import React from 'react'
 import projects from '@/data/projects'
 import ProjectCard from './projectCard/projectCard'
+import Button from '../button/button'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const MainProjects = () => {
   return (
@@ -13,6 +16,23 @@ const MainProjects = () => {
               <ProjectCard key={project.id} project={project} />
             )
         )}
+      </div>
+      <div className='w-full flex justify-center items-center'>
+        <Link href={'/projects'}>
+          <Button>
+            <div className='w-full flex justify-center items-center gap-2 p-3'>
+              <h5 className='font-oswald '>More</h5>
+              <div className='h-[20px] w-[20px] relative'>
+                <Image
+                  src={'/right-arrow.svg'}
+                  alt='right-arrow'
+                  fill
+                  sizes='100%'
+                />
+              </div>
+            </div>
+          </Button>
+        </Link>
       </div>
     </div>
   )
