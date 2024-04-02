@@ -8,7 +8,7 @@ type ExperienceProps = {
 
 const ExperienceSection = ({ experience }: ExperienceProps) => {
   const from = experience.from.toLocaleDateString()
-  const to = experience.to.toLocaleString()
+  const to = experience.to instanceof Date ? experience.to.toLocaleDateString() : 'date'
   return (
     <div className="flex flex-col items-start justify-center">
       {/* from - to */}
@@ -20,7 +20,7 @@ const ExperienceSection = ({ experience }: ExperienceProps) => {
       </h5>
       {/* title */}
       <div className="flex flex-row justify-center items-start pt-4 gap-2">
-        <div className="relative h-[20px] md:h-[30px] w-[20px] md:w-[30px]">
+        <div className="relative w-[30px] h-[30px] md:h-[30px] md:w-[30px]">
           <Image
             alt={`${experience.experienceType}`}
             src={`/${experience.experienceType}.svg`}

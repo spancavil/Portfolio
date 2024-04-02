@@ -21,6 +21,8 @@ const projects: Project[] = [
       Techs.MONGODB,
       Techs.TYPESCRIPT,
       Techs.GIT,
+      Techs.MOCHA,
+      Techs.CHAI,
     ]),
   },
   {
@@ -109,6 +111,70 @@ const projects: Project[] = [
       '/projects/tasks-timer/tasks-timer3.png',
       '/projects/tasks-timer/tasks-timer4.png',
     ]
+  },
+  {
+    id: 6,
+    title: 'Battlepalooza admin tool',
+    cover: '/projects/bp-admin-tool/bp-admin-tool-1.png',
+    description: 'Battlepalooza administrator tool for uploading different drops with images',
+    extendedDescription: 'Skeleton for the Battlepalooza dashboard using React as the main library and MaterialUI as the CSS framework. The model was finished, but it was not implemented',
+    techs: new Set([Techs.REACTJS, Techs.MATERIALUI, Techs.CSSMODULES]),
+    isMainProject: true,
+    role: 'Frontend',
+    deployLink: 'https://bp-admin.netlify.app/',
+    githubLink: 'https://github.com/spancavil/bp-admin-tool',
+    images: [
+      '/projects/bp-admin-tool/bp-admin-tool-1.png',
+      '/projects/bp-admin-tool/bp-admin-tool-2.png',
+      '/projects/bp-admin-tool/bp-admin-tool-3.png',
+      '/projects/bp-admin-tool/bp-admin-tool-4.png',
+    ]
+  },
+  {
+    id: 7,
+    title: 'Billing System CRUD',
+    description: 'A billing API using Spring Boot and SQL',
+    extendedDescription: `This API is designed following Spring Boot principles and using JPA Hibernate.
+    It consists of a billing system that has 4 interrelated entities: customer, product, invoice, and invoice_detail.
+    This is a billing system given in the Coderhouse Academy Commission for Beginning Java and it's deployed in on render, also using Docker for this purpose.`,
+    cover: '/projects/javacrudbillingsystem.jpeg',
+    isMainProject: true,
+    role: 'Backend',
+    techs: new Set([Techs.JAVA, Techs.SPRINGBOOT, Techs.MYSQL]),
+    deployLink: 'https://deploy-jar-example.onrender.com',
+    githubLink: 'https://github.com/spancavil/DeployJavaJar',
+  },
+  {
+    id: 8,
+    title: 'NextJS Blog',
+    description: 'A blog with authentication using NextJS and MongoDB as database',
+    extendedDescription: `App made with NextJS and server-side actions to connect with MongoDB.
+    It has an authentication system with both email and Github credentials, using next-auth, with implementation of protected views and routes.
+    Additional libraries are also used: react-hook-form for handling forms and errors and sonner for sending simple alerts`,
+    cover: '/projects/nextjs-blog/nextjs-blog1.png',
+    isMainProject: true,
+    role: 'Fullstack dev',
+    techs: new Set([Techs.NEXTJS, Techs.TAILWINDCSS, Techs.TYPESCRIPT, Techs.GIT, Techs.MONGODB]),
+    deployLink: 'https://nextjs-blog-pi-azure-36.vercel.app/',
+    githubLink: 'https://github.com/spancavil/nextjs-blog',
+    images: [
+      '/projects/nextjs-blog/nextjs-blog1.png',
+      '/projects/nextjs-blog/nextjs-blog2.png',
+      '/projects/nextjs-blog/nextjs-blog3.png',
+      '/projects/nextjs-blog/nextjs-blog4.png',
+    ]
+  },
+  {
+    id: 9,
+    title: 'Django Blog',
+    description: 'A blog using django with authentication',
+    extendedDescription: `A blog using Django with several features like authentication, chat, view post and post detail. Also has the possibility for edit and remove posts.
+    This app follows the model view template pattern and also it has a dashboard app where different users can be authorized.`,
+    isMainProject: true,
+    cover: '/projects/djangoblog.png',
+    role: 'Fullstack dev',
+    techs: new Set([Techs.DJANGO, Techs.PYTHON, Techs.MYSQL, Techs.CSSMODULES]),
+    githubLink: 'https://github.com/spancavil/blog-django',
   }
 ]
 

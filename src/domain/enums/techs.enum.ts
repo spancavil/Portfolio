@@ -16,5 +16,11 @@ export enum Techs {
     POSTGRESQL = 'postgresql',
     EXPRESS = 'express',
     NESTJS = 'nestjs',
-    CSSMODULES = 'cssmodules'
+    CSSMODULES = 'cssmodules',
+    APIREST = 'apirest',
+    JAVA = 'java',
+    SPRINGBOOT = 'springboot',
+    JEST = 'jest',
+    MOCHA = 'mocha',
+    CHAI = 'chai',
 }
