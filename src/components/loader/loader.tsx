@@ -1,5 +1,4 @@
 import SkeletonGrid from '@/components/skeletonGrid/skeletonGrid'
-import { Skeleton } from '@mui/material'
 
 const Loader = () => {
   return (
