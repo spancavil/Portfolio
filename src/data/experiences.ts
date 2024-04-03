@@ -3,7 +3,7 @@ import { Experience } from '@/domain/interfaces/IExperience'
 
 const experiences: Experience[] = [
   {
-    from: new Date(2020, 9, 1),
+    from: new Date(2021, 8, 1),
     to: 'date',
     title: `Wodeva Company - Fullstack Dev - ReactJS & NodeJS & AWS`,
     description: `Backend dev for Grandest live project: Express - Typescript - MongoDB. Also in Frontend: ReactJS & Redux Toolkit.

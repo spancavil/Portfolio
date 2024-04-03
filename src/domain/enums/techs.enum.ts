@@ -23,4 +23,5 @@ export enum Techs {
     JEST = 'jest',
     MOCHA = 'mocha',
     CHAI = 'chai',
+    FIREBASE = 'firebase'
 }

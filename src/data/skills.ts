@@ -34,5 +34,6 @@ export const skills: Skills = {
     Techs.MONGODB,
     Techs.MYSQL,
     Techs.POSTGRESQL,
+    Techs.FIREBASE
   ])
 }

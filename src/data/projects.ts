@@ -175,6 +175,85 @@ const projects: Project[] = [
     role: 'Fullstack dev',
     techs: new Set([Techs.DJANGO, Techs.PYTHON, Techs.MYSQL, Techs.CSSMODULES]),
     githubLink: 'https://github.com/spancavil/blog-django',
+  },
+  {
+    id: 10,
+    title: 'Form products with chat and websocket',
+    cover: '/projects/form-products/form-products1.png',
+    description: 'Getting started with express and node js plus websocket',
+    extendedDescription: 'Getting started with express and node js, along with the websocket application for a chat',
+    isMainProject: false,
+    role: 'Backend',
+    techs: new Set([Techs.NODEJS, Techs.EXPRESS]),
+    githubLink: 'https://github.com/spancavil/glitch_nodeServerChatAndProducts',
+    deployLink: 'https://sebas-ancavil-websocketii.glitch.me/',
+    images: [
+      '/projects/form-products/form-products1.png',
+      '/projects/form-products/form-products2.png',
+    ]
+  },
+  {
+    id: 11,
+    title: 'Street standarizer',
+    cover: '/projects/street-normalizer/street-normalizer1.png',
+    description: 'Using the GeoRef API for street normalization and bootstrap',
+    extendedDescription: 'Using the GeoRef API for street normalization and bootstrap',
+    isMainProject: false,
+    role: 'Frontend',
+    techs: new Set([Techs.JAVASCRIPT, Techs.CSSMODULES]),
+    githubLink: 'https://github.com/spancavil/Async-con-GeoRef',
+    deployLink: 'https://spancavil.github.io/Async-con-GeoRef/',
+    images: [
+      '/projects/street-normalizer/street-normalizer1.png',
+      '/projects/street-normalizer/street-normalizer2.png',
+      '/projects/street-normalizer/street-normalizer3.png',
+      '/projects/street-normalizer/street-normalizer4.png',
+    ]
+  },
+  {
+    id: 12,
+    title: 'API ecommerce',
+    description: 'It is the API of an ecommerce corresponding to the final project of the Coderhouse Backend course',
+    extendedDescription: 'Final project of the backend course (6 months long) using NodeJS, Express, EJS as a template engine for rendering, Passport for authentication, and Mongo Atlas was used as a non-SQL database.',
+    cover: '/ecommerce.jpeg',
+    isMainProject: false,
+    role: 'Backend',
+    techs: new Set([Techs.APIREST, Techs.EXPRESS, Techs.NODEJS, Techs.MONGODB, Techs.GIT]),
+    githubLink: 'https://github.com/spancavil/Backend-3era-preentrega',
+  },
+  {
+    id: 13,
+    title: 'El Gatito Azul',
+    description: 'Ecommerce for cat scratchers using React',
+    extendedDescription: `For this freelance project, in addition to React, the following technologies were used:
+    Material-UI: For adding modals and forms.
+    emailjs-com: To send emails to the company notifying a new order.
+    Firebase: Use of firebase to manage the product database and generated orders.`,
+    cover: '/projects/elgatitoazul.png',
+    isMainProject: false,
+    role: 'Frontend',
+    techs: new Set([Techs.FIREBASE, Techs.REACTJS, Techs.MATERIALUI, Techs.GIT])
+  },
+  {
+    id: 14,
+    title: 'Flask chain',
+    description: 'Fundamentals of blockchain ⛓ running on a Flask 🐍 microserver',
+    extendedDescription: 'Fundamentals of blockchain ⛓ running on a Flask 🐍 microserver',
+    cover: '/flaskchain.jpeg',
+    isMainProject: false,
+    role: 'Backend',
+    techs: new Set([Techs.FLASK, Techs.PYTHON, Techs.GIT])
+  },
+  {
+    id: 15,
+    title: 'Gin books',
+    description: 'A basic books CRUD (create read update and delete) with Golang - Gin framework.',
+    extendedDescription: 'A basic books CRUD (create read update and delete) with Golang - Gin framework.',
+    cover: '/ginbooks.jpeg',
+    isMainProject: false,
+    role: 'Backend',
+    techs: new Set([Techs.APIREST, Techs.GOLANG]),
+    githubLink: 'https://github.com/spancavil/golang-gin-books',
   }
 ]
 
