@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { Carousel } from 'react-responsive-3d-carousel'
+import { redirect } from 'next/navigation'
 type Props = {
   params: { slug: string }
   searchParams?: Object
@@ -18,12 +19,15 @@ const ProjectDetail = ({ params, searchParams }: Props) => {
     (project) => removeBlankSpacesAndToLowerCase(project.title) === title
   )
 
+  if(!project) {
+    redirect('/projects')
+  }
+
   const paragraphsExtendedDescription = (project?.extendedDescription || '')
     .split('\n')
     .filter((paragraph) => paragraph !== '')
 
   return (
-    // <HomePageLayout lessPaddingX={true}>
     <div
       className={`flex flex-col items-start justify-start gap-4 w-full md:-mt-12`}
     >

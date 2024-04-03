@@ -9,13 +9,13 @@ import Experience from '@/components/sections/experience'
 export default function Home() {
   return (
     <HomePageLayout>
-      <Presentation/>
-      <Separator/>
-      <MainProjects/>
-      <Separator/>
-      <Experience/>
-      <Separator/>
-      <Skills/>
+      <Presentation />
+      <Separator />
+      <MainProjects />
+      <Separator />
+      <Experience />
+      <Separator />
+      <Skills />
     </HomePageLayout>
   )
 }

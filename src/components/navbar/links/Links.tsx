@@ -2,19 +2,20 @@
 import NavLink from './navLink/NavLink'
 import { useState } from 'react'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
-type Props = {}
-
-const Links = (props: Props) => {
-  // const session = useSession()
+const Links = () => {
   const [openNavMobile, setOpenNavMobile] = useState(false)
-  // const isAdmin = true
-  const links = [
-    { title: 'About', path: '/about' },
-    { title: 'Projects', path: '/skills' },
-    { title: "Experience", path: 'experience'},
-    { title: 'Skills', path: '/contact' },
-  ]
+  const pathName = usePathname()
+  const isHome = pathName === '/'
+  const links = isHome
+    ? [
+        { title: 'About', path: '/about' },
+        { title: 'Projects', path: '/skills' },
+        { title: 'Experience', path: 'experience' },
+        { title: 'Skills', path: '/contact' },
+      ]
+    : []
 
   return (
     <div className="flex items-center">
@@ -23,11 +24,12 @@ const Links = (props: Props) => {
           <NavLink item={link} key={link.title} />
         ))}
       </div>
-      <button
-        onClick={() => setOpenNavMobile((value) => !value)}
-        className="flex md:hidden"
-      >
-        <div className="min-h-[20px] min-w-[20px] relative">
+      {isHome && (
+        <button
+          onClick={() => setOpenNavMobile((value) => !value)}
+          className="flex md:hidden"
+        >
+          <div className="min-h-[20px] min-w-[20px] relative">
             <Image
               src={'/close.svg'}
               alt="close"
@@ -42,12 +44,13 @@ const Links = (props: Props) => {
               height={20}
               className={`absolute top-0 ${!openNavMobile ? 'opacity-100 animate-fadeIn' : 'opacity-0 animate-fadeOut'}`}
             />
-        </div>
-      </button>
+          </div>
+        </button>
+      )}
       {openNavMobile && (
-        <div className="animate-fadeIn absolute top-[100px] right-0 w-[100vw] h-[calc(100vh-100px)] bg-black bg-opacity-90 z-10 flex flex-col items-center justify-center gap-3 md:hidden">
+        <div className="animate-fadeIn absolute top-[80px] right-0 w-[100vw] h-[calc(100vh-80px)] bg-black bg-opacity-90 z-10 flex flex-col items-center justify-center gap-3 md:hidden">
           {links.map((link) => (
-            <NavLink item={link} key={link.title} />
+            <NavLink item={link} key={link.title} setOpenNavMobile = {setOpenNavMobile}/>
           ))}
         </div>
       )}

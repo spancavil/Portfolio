@@ -17,7 +17,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
   const handleNavigate = () => {
     const title = removeBlankSpacesAndToLowerCase(project.title)
-    router.push(`/projects/${title}`)
+    router.push(`/projects/${title}`, {scroll: true})
   }
 
   return (

@@ -18,7 +18,7 @@ const MainProjects = () => {
         )}
       </div>
       <div className='w-full flex justify-center items-center'>
-        <Link href={'/projects'}>
+        <Link href={'/projects'} scroll={true}>
           <Button>
             <div className='w-full flex justify-center items-center gap-2 p-3'>
               <h5 className='font-oswald '>More</h5>
