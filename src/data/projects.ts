@@ -254,6 +254,26 @@ const projects: Project[] = [
     role: 'Backend',
     techs: new Set([Techs.APIREST, Techs.GOLANG]),
     githubLink: 'https://github.com/spancavil/golang-gin-books',
+  },
+  {
+    id: 16,
+    title: 'Psyker',
+    description: 'User authentication flow using vanilla JS of a digital studies platform',
+    extendedDescription: 'The authentication flow includes: login with email and password, forgotten password, registration, and login with Google SSO. Also signout. It was a freelance project',
+    cover: '/projects/psyker/psyker1.png',
+    images: [
+      '/projects/psyker/psyker1.png',
+      '/projects/psyker/psyker2.png',
+      '/projects/psyker/psyker3.png',
+      '/projects/psyker/psyker4.png',
+      '/projects/psyker/psyker5.png',
+      '/projects/psyker/psyker6.png',
+      '/projects/psyker/psyker7.png',
+      '/projects/psyker/psyker8.png',
+    ],
+    isMainProject: false,
+    role: 'Frontend',
+    techs: new Set([Techs.JAVASCRIPT, Techs.CSSMODULES, Techs.APIREST])
   }
 ]
 

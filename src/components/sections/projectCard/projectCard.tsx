@@ -22,7 +22,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
   return (
     <div
-      className="transition ease-out duration-300 hover:-translate-y-2 hover:border-dark-white hover:bg-black flex flex-col g-3 w-full md:h-[500px] md:w-[400px] bg-dark-gray rounded-lg border-[1px] border-light-gray cursor-pointer"
+      className="transition ease-out duration-300 md:hover:-translate-y-2 hover:border-dark-white hover:bg-black flex flex-col g-3 w-full md:h-[500px] md:w-[400px] bg-dark-gray rounded-lg border-[1px] border-light-gray cursor-pointer"
       onClick={handleNavigate}
     >
       <div
