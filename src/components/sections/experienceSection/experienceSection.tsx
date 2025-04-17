@@ -7,8 +7,11 @@ type ExperienceProps = {
 }
 
 const ExperienceSection = ({ experience }: ExperienceProps) => {
-  const from = experience.from.toLocaleDateString()
-  const to = experience.to instanceof Date ? experience.to.toLocaleDateString() : 'date'
+  const from = experience.from.toLocaleDateString('es-AR')
+  const to =
+    experience.to instanceof Date
+      ? experience.to.toLocaleDateString('es-AR')
+      : 'date'
   return (
     <div className="flex flex-col items-start justify-center">
       {/* from - to */}

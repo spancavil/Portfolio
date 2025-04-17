@@ -19,6 +19,8 @@ export const skills: Skills = {
     Techs.DJANGO,
     Techs.FLASK,
     Techs.GIT,
+    Techs.AZURE,
+    Techs.SWAGGER,
   ]),
   Frontend: new Set([
     Techs.JAVASCRIPT,
@@ -29,11 +31,13 @@ export const skills: Skills = {
     Techs.CSSMODULES,
     Techs.APIREST,
     Techs.GIT,
+    Techs.STORYBOOK,
   ]),
   Databases: new Set([
     Techs.MONGODB,
     Techs.MYSQL,
     Techs.POSTGRESQL,
-    Techs.FIREBASE
-  ])
+    Techs.FIREBASE,
+    Techs.ORACLE,
+  ]),
 }
