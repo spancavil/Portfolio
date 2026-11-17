@@ -3,18 +3,33 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import Input from '../input/input'
 import Button from '../button/button'
-import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 const Presentation = () => {
   const email = 'soancavil@gmail.com'
 
   const [copied, setCopied] = useState(false)
 
-  const onCopyClipboard = (result: any) => {
-    setCopied(true)
-    setTimeout(() => {
-      setCopied(false)
-    }, 3000)
+  const onCopyClipboard = async () => {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(email)
+      } else {
+        const textarea = document.createElement('textarea')
+        textarea.value = email
+        textarea.style.position = 'fixed'
+        textarea.style.opacity = '0'
+        document.body.appendChild(textarea)
+        textarea.select()
+        document.execCommand('copy')
+        document.body.removeChild(textarea)
+      }
+      setCopied(true)
+      setTimeout(() => {
+        setCopied(false)
+      }, 3000)
+    } catch (error) {
+      console.error('Could not copy the email address', error)
+    }
   }
 
   return (
@@ -34,15 +49,22 @@ const Presentation = () => {
           </h1>
           <div className="w-full relative flex items-center gap-2">
             <Input value={email} disabled={true} />
-            <CopyToClipboard onCopy={(text, result)=>onCopyClipboard(result)} text={email}>
-              <Button height={40} width={40} additionalStyles={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                {!copied ? (
-                  <Image src={'/copy.svg'} height={25} width={25} alt="copy" />
-                ) : (
-                  <Image src={'/tick.svg'} height={25} width={25} alt="tick" />
-                )}
-              </Button>
-            </CopyToClipboard>
+            <Button
+              height={40}
+              width={40}
+              onClick={onCopyClipboard}
+              additionalStyles={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              {!copied ? (
+                <Image src={'/copy.svg'} height={25} width={25} alt="copy" />
+              ) : (
+                <Image src={'/tick.svg'} height={25} width={25} alt="tick" />
+              )}
+            </Button>
           </div>
         </div>
       </div>

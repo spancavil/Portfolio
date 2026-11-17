@@ -5,16 +5,16 @@ import projects from '@/data/projects'
 import { removeBlankSpacesAndToLowerCase } from '@/utils/string.utils'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { use } from 'react'
 import { Carousel } from 'react-responsive-3d-carousel'
+import 'react-responsive-3d-carousel/dist/styles.css'
 import { redirect } from 'next/navigation'
 type Props = {
-  params: { slug: string }
-  searchParams?: Object
+  params: Promise<{ slug: string }>
 }
 
-const ProjectDetail = ({ params, searchParams }: Props) => {
-  const { slug: title } = params
+const ProjectDetail = ({ params }: Props) => {
+  const { slug: title } = use(params)
   const project = projects.find(
     (project) => removeBlankSpacesAndToLowerCase(project.title) === title
   )
@@ -49,17 +49,16 @@ const ProjectDetail = ({ params, searchParams }: Props) => {
         >
           {project?.images ? (
             <Carousel
+              items={project.images.map((image) => (
+                <CarouselImage src={image} key={image} />
+              ))}
               width="450px"
               height="350px"
-              depth={1}
-              spread="wide"
+              containerWidth="100%"
+              containerHeight="350px"
               autoPlay={false}
               showStatus={false}
-            >
-              {project.images.map((image) => {
-                return <CarouselImage src={image} key={image} />
-              })}
-            </Carousel>
+            />
           ) : (
             <div className="w-full relative h-[30vh] max-h-fit">
               <Image

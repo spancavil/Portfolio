@@ -310,7 +310,7 @@ const projects: Project[] = [
     githubLink: 'https://github.com/spancavil/golang-gin-books',
   },
   {
-    id: 1,
+    id: 17,
     title: 'Psyker',
     description:
       'User authentication flow using vanilla JS of a digital studies platform',
