@@ -4,6 +4,85 @@ import { Techs } from '@/domain/enums/techs.enum'
 const projects: Project[] = [
   {
     id: 1,
+    title: 'Presentacion Preliquidacion Facturas',
+    description: 'Platform for managing pre-settlements and uploading invoices',
+    extendedDescription: 'An application developed using ViteJS, featuring a custom design system. It aggregates various service charges from different providers—data carried over from the previous stage ("Liquidaciones"). These entries are grouped into "pre-settlements," which can subsequently be invoiced. The invoice-loading process is automated via AI, incorporating full validation for all data fields.',
+    cover: '/projects/provartLogo.svg',
+    isMainProject: true,
+    role: 'Fullstack',
+    techs: new Set([
+      Techs.AZURE,
+      Techs.NODEJS,
+      Techs.EXPRESS,
+      Techs.SWAGGER,
+      Techs.ORACLE,
+      Techs.GIT,
+      Techs.JEST,
+      Techs.STORYBOOK,
+      Techs.REACTJS,
+      Techs.TAILWINDCSS,
+    ]),
+    images: [
+      '/projects/presentacion-preliquidacion-facturas/presentacion-preliquidacion-facturas1.png',
+      '/projects/presentacion-preliquidacion-facturas/presentacion-preliquidacion-facturas2.png',
+      '/projects/presentacion-preliquidacion-facturas/presentacion-preliquidacion-facturas3.png',
+      '/projects/presentacion-preliquidacion-facturas/presentacion-preliquidacion-facturas4.png',
+      '/projects/presentacion-preliquidacion-facturas/presentacion-preliquidacion-facturas5.png',
+      '/projects/presentacion-preliquidacion-facturas/presentacion-preliquidacion-facturas6.png',
+    ],
+  },
+  {
+    id: 2,
+    title: 'Liquidaciones',
+    description: 'Platform for visualizing various types of pharmacy consumption',
+    extendedDescription: 'This platform (built with ViteJS and a custom design system) displays usage/claims from all providers (pharmacies) so that they can be authorized, where applicable. If a reported claim lacks authorization from the ART, it can be linked via an internal search.',
+    cover: '/projects/provartLogo.svg',
+    isMainProject: true,
+    role: 'Fullstack',
+    techs: new Set([
+      Techs.AZURE,
+      Techs.NODEJS,
+      Techs.EXPRESS,
+      Techs.SWAGGER,
+      Techs.ORACLE,
+      Techs.GIT,
+      Techs.JEST,
+      Techs.STORYBOOK,
+      Techs.REACTJS,
+      Techs.TAILWINDCSS,
+    ]),
+    images: [
+      '/projects/liquidaciones/liquidaciones-mvp1.png',
+      '/projects/liquidaciones/liquidaciones-mvp2.png',
+      '/projects/liquidaciones/liquidaciones-mvp3.png',
+      '/projects/liquidaciones/liquidaciones-mvp4.png',
+      '/projects/liquidaciones/liquidaciones-mvp5.png',
+    ],
+  },
+  {
+    id: 3,
+    title: 'Historia Clinica IA',
+    description: 'AI-powered medical record visualization app that queries progress notes from the database',
+    extendedDescription: 'The app, via the backend, connects to an Oracle database to retrieve all progress reports related to an incident and generates a clinical history based on them, saving time for physicians by allowing them to review a patient’s summarized clinical history at a quick glance.',
+    cover: '/projects/provartLogo.svg',
+    isMainProject: true,
+    role: 'Fullstack',
+    techs: new Set([
+      Techs.AZURE,
+      Techs.NODEJS,
+      Techs.EXPRESS,
+      Techs.SWAGGER,
+      Techs.ORACLE,
+      Techs.GIT,
+      Techs.JEST,
+      Techs.STORYBOOK,
+      Techs.REACTJS,
+      Techs.TAILWINDCSS,
+    ]),
+    images: ['/projects/historia-clinica-ia/historia-clinica-ia1.png'],
+  },
+  {
+    id: 4,
     title: 'Dinerarias MVP',
     description:
       'Deviation management platform, in the area of ​​​​cash benefits',
@@ -32,7 +111,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 2,
+    id: 5,
     title: 'Grandest Live',
     description:
       'Platform for uploading and selling videos made by content creators. Creators could also schedule calls with consumers',
@@ -55,7 +134,7 @@ const projects: Project[] = [
     ]),
   },
   {
-    id: 3,
+    id: 6,
     title: `Grandest Live - Coordinator Panel`,
     description: 'Dashboard for administrators of Grandest Live application.',
     cover: '/projects/grandestLogo.svg',
@@ -80,7 +159,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 4,
+    id: 7,
     title: 'Battlepalooza',
     description:
       "Battlepalooza game web platform. Promotions, user auth and marketplace with purchase and sale of NFT's from the game.",
@@ -101,7 +180,7 @@ const projects: Project[] = [
     githubLink: 'https://github.com/spancavil/battepalooza',
   },
   {
-    id: 5,
+    id: 8,
     title: 'SkydropX',
     description:
       'Web platform to be used on Oxxo store terminals, in tablet resolution. Handling of packages with shipments.',
@@ -121,7 +200,7 @@ const projects: Project[] = [
     deployLink: 'https://skydrop-x.vercel.app/',
   },
   {
-    id: 6,
+    id: 9,
     title: 'Tasks timer',
     cover: '/projects/tasks-timer/tasks-timer1.png',
     description: 'A task timer that would also work as an interval trainer',
@@ -139,7 +218,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 7,
+    id: 10,
     title: 'Battlepalooza admin tool',
     cover: '/projects/bp-admin-tool/bp-admin-tool-1.png',
     description:
@@ -159,7 +238,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 8,
+    id: 11,
     title: 'Billing System CRUD',
     description: 'A billing API using Spring Boot and SQL',
     extendedDescription: `This API is designed following Spring Boot principles and using JPA Hibernate.
@@ -173,7 +252,7 @@ const projects: Project[] = [
     githubLink: 'https://github.com/spancavil/DeployJavaJar',
   },
   {
-    id: 9,
+    id: 12,
     title: 'NextJS Blog',
     description:
       'A blog with authentication using NextJS and MongoDB as database',
@@ -200,7 +279,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 10,
+    id: 13,
     title: 'Django Blog',
     description: 'A blog using django with authentication',
     extendedDescription: `A blog using Django with several features like authentication, chat, view post and post detail. Also has the possibility for edit and remove posts.
@@ -212,7 +291,7 @@ const projects: Project[] = [
     githubLink: 'https://github.com/spancavil/blog-django',
   },
   {
-    id: 11,
+    id: 14,
     title: 'Form products with chat and websocket',
     cover: '/projects/form-products/form-products1.png',
     description: 'Getting started with express and node js plus websocket',
@@ -229,7 +308,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 12,
+    id: 15,
     title: 'Street standarizer',
     cover: '/projects/street-normalizer/street-normalizer1.png',
     description: 'Using the GeoRef API for street normalization and bootstrap',
@@ -248,7 +327,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 13,
+    id: 16,
     title: 'API ecommerce',
     description:
       'It is the API of an ecommerce corresponding to the final project of the Coderhouse Backend course',
@@ -267,7 +346,7 @@ const projects: Project[] = [
     githubLink: 'https://github.com/spancavil/Backend-3era-preentrega',
   },
   {
-    id: 14,
+    id: 17,
     title: 'El Gatito Azul',
     description: 'Ecommerce for cat scratchers using React',
     extendedDescription: `For this freelance project, in addition to React, the following technologies were used:
@@ -285,7 +364,7 @@ const projects: Project[] = [
     ]),
   },
   {
-    id: 15,
+    id: 18,
     title: 'Flask chain',
     description:
       'Fundamentals of blockchain ⛓ running on a Flask 🐍 microserver',
@@ -297,7 +376,7 @@ const projects: Project[] = [
     techs: new Set([Techs.FLASK, Techs.PYTHON, Techs.GIT]),
   },
   {
-    id: 16,
+    id: 19,
     title: 'Gin books',
     description:
       'A basic books CRUD (create read update and delete) with Golang - Gin framework.',
@@ -310,7 +389,7 @@ const projects: Project[] = [
     githubLink: 'https://github.com/spancavil/golang-gin-books',
   },
   {
-    id: 17,
+    id: 20,
     title: 'Psyker',
     description:
       'User authentication flow using vanilla JS of a digital studies platform',
